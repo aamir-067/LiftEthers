@@ -648,6 +648,10 @@ video {
   width: 100vw;
 }
 
+.flex-col{
+  flex-direction: column;
+}
+
 .items-center{
   align-items: center;
 }
@@ -668,6 +672,10 @@ video {
   gap: 1.5rem;
 }
 
+.border-4{
+  border-width: 4px;
+}
+
 .border-dashed{
   border-style: dashed;
 }
@@ -675,6 +683,11 @@ video {
 .border-black{
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-red-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(185 28 28 / var(--tw-border-opacity));
 }
 
 .bg-gradient-to-br{

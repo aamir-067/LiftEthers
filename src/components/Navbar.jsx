@@ -7,8 +7,8 @@ const Navbar = () => {
         <nav className='w-screen h-24 border-3 border-black'>
             <div className='w-full h-full flex justify-between items-center'>
                 <div className='h-full w-2/6 gap-6 ml-4 md:ml-10 flex justify-center items-center'>
-                    <a className='flex' href=""><img src={logo} className='object-cover my-4 w-16 h-16 md:w-20 md:h-20' alt=" bodybuilder portrait illustrator in a position ziz pose" /></a>
-                    <a href=""><h2 className='text-4xl hidden md:block font_cursive'><span className='text-yellow-600'>Lift</span>Ethers</h2></a>
+                    <img src={logo} className='object-cover my-4 w-16 h-16 md:w-20 md:h-20' alt=" bodybuilder portrait illustrator in a position ziz pose" />
+                    <h2 className='text-4xl hidden md:block font_cursive'><span className='text-yellow-600'>Lift</span>Ethers</h2>
                 </div>
 
 
