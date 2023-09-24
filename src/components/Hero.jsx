@@ -10,10 +10,10 @@ const Hero = () => {
                 <h2 className='font_cursive lg:text-6xl md:text-5xl text-3xl'>Donate <span className='text-yellow-600'>Eth</span>ers</h2>
                 <p className='font-poppins text-lg capitalize my-6 mx-6'>please connect sepolia testnet to fetch data.</p>
                 <form action="">
-                    <input required className='py-2 px-4 w-10/12 md:w-6/12  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]' type="text" placeholder='Name' /> <br />
+                    <input required className='py-2 px-4 w-10/12 md:w-6/12 focus:outline-black  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]' type="text" placeholder='Name' /> <br />
                     <input required className='my-4 py-2 px-4 w-10/12 md:w-6/12 focus:outline-black shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]' type="text" placeholder='massage' /> <br />
                     <input required className='py-2 px-4 w-10/12 md:w-6/12 focus:outline-black shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]' type="text" placeholder='Amount of Eth' /> <br />
-                    <button className='button_light my-6 tracking-wide focus:outline-black shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]'>Donate</button>
+                    <button className='button_light my-6 tracking-wider focus:outline-black shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]'>Donate</button>
                 </form>
             </div>
         </section>

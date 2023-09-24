@@ -21,3 +21,11 @@
 .table_field {
 	@apply border border-collapse border-slate-400 capitalize text-lg px-3 py-2 text-left;
 }
+
+.table_field_nb {
+	@apply capitalize text-lg px-3 py-2 text-left;
+}
+
+.bg_darkish {
+	background-color: #302001;
+}
