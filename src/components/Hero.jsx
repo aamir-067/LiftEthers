@@ -6,17 +6,16 @@ const Hero = () => {
         <section className='mix-w-screen'>
             <img src={banner} className='w-full' alt="banner in which i mention that give me some ethers" />
 
-            <div className='w-11/12 md:w-9/12 border-6 my-10 border-black'>
-                <h2>Donate Ethers</h2>
-                <p>please connect sepolia testnet to fetch data</p>
+            <div className='w-11/12 md:w-7/12 border-6 my-10 border-black mx-auto shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] rounded-md'>
+                <h2 className='font_cursive lg:text-6xl md:text-5xl text-3xl'>Donate <span className='text-yellow-600'>Eth</span>ers</h2>
+                <p className='font-poppins text-lg capitalize my-6 mx-6'>please connect sepolia testnet to fetch data.</p>
                 <form action="">
-                    <input type="text" placeholder='Name' /> <br />
-                    <input type="text" placeholder='Massage' /><br />
-                    <input type="text" placeholder='Amount of ether you want to donate' /> <br />
-                    <button className='button_light'>Donate</button>
+                    <input required className='py-2 px-4 w-10/12 md:w-6/12  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]' type="text" placeholder='Name' /> <br />
+                    <input required className='my-4 py-2 px-4 w-10/12 md:w-6/12 focus:outline-black shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]' type="text" placeholder='massage' /> <br />
+                    <input required className='py-2 px-4 w-10/12 md:w-6/12 focus:outline-black shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]' type="text" placeholder='Amount of Eth' /> <br />
+                    <button className='button_light my-6 tracking-wide focus:outline-black shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]'>Donate</button>
                 </form>
             </div>
-
         </section>
     )
 }

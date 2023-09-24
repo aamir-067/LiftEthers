@@ -17,3 +17,7 @@
 .button_light {
 	@apply px-4 py-2 border-2 border-yellow-600 bg-transparent rounded-full hover:bg-yellow-600 ease-in-out duration-150;
 }
+
+.table_field {
+	@apply border border-collapse border-slate-400 capitalize text-lg px-3 py-2 text-left;
+}
