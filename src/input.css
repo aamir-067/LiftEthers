@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:wght@300;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button_fill {
+	@apply px-4 py-2 border-2 border-yellow-600 bg-yellow-600 rounded-full hover:bg-transparent ease-in-out duration-150;
+}
+
+.font_poppins {
+	font-family: "Poppins", sans-serif;
+}
+.font_cursive {
+	font-family: "Croissant One", cursive;
+}
+
+.button_light {
+	@apply px-4 py-2 border-2 border-yellow-600 bg-transparent rounded-full hover:bg-yellow-600 ease-in-out duration-150;
+}
