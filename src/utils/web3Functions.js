@@ -27,6 +27,7 @@ const initializeWeb3 = async () => {
             return { provider: web3, contract: cont, signer: signer };
 
         }
+        console.error('Please install metamask');
     } catch (e) {
         console.error(e);
     }
@@ -42,9 +43,9 @@ const getAllTips = async ({ web3Api, setAllTips }) => {
     try {
         const res = await web3Api.contract.allTips()
 
-        console.log('response of all donations', res);
+        // console.log('response of all donations', res);
         setAllTips(res);
-        return res;
+        // return res;
     } catch (e) {
         console.error(e);
         return false;
@@ -55,15 +56,15 @@ const donateEth = async ({ web3Api, name, massage, value, setAllTips }) => {
     if (massage && value > 0) {
         try {
             if (!web3Api.signer) {
-                console.log('web3Api not defined ..');
+                console.error('connect wallet first ..');
                 return false;
             }
             // console.log(ethers.parseEther(value))
             const res = await web3Api.contract.giveTip(name, massage, { value: ethers.parseEther(value) });
             await res.wait();
-            console.log('testing response =>', res);
+            // console.log('testing response =>', res);
             await getAllTips({ web3Api, setAllTips });
-            return res;
+            // return res;
 
         } catch (e) {
             console.error(e);
