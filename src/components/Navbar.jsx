@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import logo from '../pics/logo.png';
+import { allContexts } from '../App';
+import { initializeWeb3, getAllTips } from '../utils/web3Functions';
+
 
 const Navbar = () => {
-    let web3Api = true;
+    const { web3Api, setWeb3Api, setAllTips } = useContext(allContexts);
     return (
         <nav className='w-screen h-24 border-3 border-black'>
             <div className='w-full h-full flex justify-between items-center'>
@@ -13,10 +16,19 @@ const Navbar = () => {
 
 
                 <div className='h-full flex justify-center items-center mr-4 md:mr-10'>
-                    {!web3Api ? <button className='button_fill font_poppins tracking-wide capitalize'> Connect wallet</button> :
+                    {!web3Api.signer ? <button onClick={async () => {
+                        const res = await initializeWeb3();
+                        setWeb3Api({ provider: res.provider, contract: res.contract, signer: res.signer });
+
+                        await getAllTips({ web3Api: { provider: res.provider, contract: res.contract, signer: res.signer }, setAllTips });
+
+                    }} className='button_fill font_poppins tracking-wide capitalize'> Connect wallet</button> :
                         <div className='flex justify-center items-center gap-4 bg-center'>
-                            <p className='font_poppins'>0x0000....00000</p>
-                            <button className='button_light tracking-wide font_poppins capitalize'>logout</button>
+                            <p className='font_poppins'>{`${[...web3Api.signer.address].slice(0, 5).join("")}....${[...web3Api.signer.address].slice(38, 42).join("")}`}</p>
+                            <button onClick={() => {
+                                setWeb3Api({ provider: null, signer: null, contract: null })
+                                setAllTips(null)
+                            }} className='button_light tracking-wide font_poppins capitalize'>logout</button>
                         </div>}
                 </div>
             </div>

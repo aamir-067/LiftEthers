@@ -7,6 +7,8 @@ its a dapp you can use it so that other peoples can send you testnet ethers. As 
 1. This Dapp is deployed on sepolia testnet.
 2. if you want to use it so that people can donate me some ether then please deploy the contract from your own address and update the contract address in the application.
 
+# `Project Status : Completed and working`
+
 ## Available Scripts
 
 In the project directory, you can run:
