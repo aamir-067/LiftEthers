@@ -29,8 +29,6 @@ const Hero = () => {
                     <input ref={val} required className='py-2 px-4 w-10/12 md:w-6/12 focus:outline-black shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]' type="text" placeholder='Amount of Eth' /> <br />
                     <button className='button_light my-6 tracking-wider focus:outline-black shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]'>Donate</button>
                 </form>
-                {/* {web3Api?.account?.address && (String(web3Api.account.address).toLowerCase() === '0x575cA73E642983fF8818F0cb0Fa692A788Bc45A4'.toLowerCase() ?
-                    <button onClick={async () => { await getMyDonation({ web3Api }) }} className='button_light mx-3 tracking-wider focus:outline-black shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]'>get Donations</button> : <></>)} */}
             </div>
         </section>
     )

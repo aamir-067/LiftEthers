@@ -9,6 +9,8 @@ its a dapp you can use it so that other peoples can send you testnet ethers. As 
 
 # `Project Status : Completed and working`
 
+## to visit [click here](https://liftethers.netlify.app/)
+
 ## Available Scripts
 
 In the project directory, you can run:
